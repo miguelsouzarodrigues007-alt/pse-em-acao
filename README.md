@@ -29,10 +29,7 @@ cadastro de ações de qualquer eixo do PSE.
 
 ## Questão norteadora
 
-Como uma aplicação desenvolvida em linguagem C pode auxiliar uma equipe escolar e
-de saúde a planejar, registrar e acompanhar ações coletivas do Programa Saúde na
-Escola, apresentando informações claras e preservando a privacidade dos estudantes?
-
+Como uma aplicação em linguagem C, operando apenas com dados coletivos e fictícios, pode permitir que a equipe intersetorial compare o que foi planejado com o que foi realizado nas ações do PSE, por situação, por escola e por tema, apoiando o acompanhamento da cobertura das escolas sem expor dados dos estudantes?
 ## Escopo do sistema
 
 1. Cadastrar ação do PSE
