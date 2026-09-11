@@ -40,7 +40,8 @@ Escola, apresentando informações claras e preservando a privacidade dos estuda
 3. Pesquisar ações por código, escola ou tema
 4. Atualizar a situação da ação e registrar a quantidade efetiva de participantes
 5. Gerar um resumo geral com totais e percentual de participação
-6. Validar as entradas do usuário
+6. Gerar um resumo por escola, destacando escolas sem ação realizada
+7. Validar as entradas do usuário
 
 ## Limites éticos
 
