@@ -55,3 +55,5 @@ diagnóstico, triagem, prescrição ou recomendação de tratamento.
 **Etapa 1 — Documento escrito.** Contempla a produção textual, os requisitos, os
 fluxogramas, os pseudocódigos e o planejamento das sprints. A implementação em
 linguagem C será entregue na Etapa 2.
+
+Documento da Etapa 1: [clique aqui](documentacao/AEP_ESOFT2S_PSE_em_Acao_Etapa1_Miguel_Antonio_Rafael.pdf)
