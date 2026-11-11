@@ -6,54 +6,79 @@ Curso: Engenharia de Software — Série: ESOFT2S
 
 ## Integrantes
 
-| Nome | RA |
-|---|---|
+| Nome                      | RA         |
+| ------------------------- | ---------- |
 | Miguel de Souza Rodrigues | 26000989-2 |
-| Antonio Augusto Fuggi | 26003652-2 |
-| Rafael Lacava Rampazzo | 26001885-2 |
+| Antonio Augusto Fuggi     | 26003652-2 |
+| Rafael Lacava Rampazzo    | 26001885-2 |
 
 ## Proposta
 
-Desenvolvimento de uma aplicação em linguagem C, executada em terminal, para apoiar
-o planejamento e o acompanhamento de ações coletivas do Programa Saúde na Escola
-(PSE), instituído pelo Decreto nº 6.286/2007.
+Aplicação em linguagem C, executada em terminal, para apoiar o planejamento e o
+acompanhamento de ações coletivas do Programa Saúde na Escola (PSE), instituído pelo
+Decreto nº 6.286/2007.
 
-A solução atende à equipe intersetorial fictícia IntegraPSE, responsável por
-acompanhar as ações realizadas nas escolas de um município e atualmente dependente
-de anotações, formulários e planilhas separadas.
+A solução atende à equipe intersetorial fictícia IntegraPSE, que acompanha as ações
+realizadas nas escolas de um município e hoje depende de anotações, formulários e
+planilhas separadas.
 
-## Tema escolhido para contextualização
+**Tema escolhido para a demonstração:** Alimentação Saudável. O sistema, no entanto,
+permite cadastrar ações de qualquer uma das 14 temáticas do PSE.
 
-Alimentação Saudável. O sistema, no entanto, mantém estrutura geral e permite o
-cadastro de ações de qualquer eixo do PSE.
+## Funcionalidades
 
-## Questão norteadora
-
-Como uma aplicação em linguagem C, operando apenas com dados coletivos e fictícios, pode permitir que a equipe intersetorial compare o que foi planejado com o que foi realizado nas ações do PSE, por situação, por escola e por tema, apoiando o acompanhamento da cobertura das escolas sem expor dados dos estudantes?
-## Escopo do sistema
-
-1. Cadastrar ação do PSE
+1. Cadastrar ação (código, escola, tema, data prevista, público-alvo, responsável e quantidade prevista)
 2. Listar todas as ações cadastradas
-3. Pesquisar ações por código, escola ou tema
-4. Atualizar a situação da ação e registrar a quantidade efetiva de participantes
-5. Gerar um resumo geral com totais e percentual de participação
-6. Gerar um resumo por escola, destacando escolas sem ação realizada
-7. Validar as entradas do usuário
+3. Pesquisar ações por código, por parte do nome da escola ou por tema
+4. Atualizar a situação da ação (planejada, realizada ou cancelada) e registrar os participantes efetivos
+5. Gerar resumo geral com totais por situação e percentual de participação
+6. Gerar resumo por escola, destacando as escolas sem nenhuma ação realizada
+7. Validar as entradas: códigos repetidos, quantidades negativas, campos vazios, datas inválidas,
+   opções inexistentes e letras digitadas no lugar de números
 
-## Limites éticos
+## Como compilar e executar
 
-O sistema opera exclusivamente com dados fictícios e informações coletivas sobre as
-ações. Não armazena dados individuais ou sensíveis de estudantes e não realiza
-diagnóstico, triagem, prescrição ou recomendação de tratamento.
+O programa usa apenas bibliotecas padrão da linguagem C (`stdio.h`, `string.h` e `ctype.h`)
+e funciona no Windows e no Linux.
+
+**Com Code::Blocks ou Dev-C++ (Windows):** abra o arquivo `codigo/pse_em_acao.c` e use a
+opção *Compilar e Executar*.
+
+**Com GCC pelo terminal:**
+
+```bash
+cd codigo
+gcc pse_em_acao.c -o pse
+./pse        # Linux
+pse.exe      # Windows
+```
 
 ## Estrutura do repositório
 
-- `documentacao/` — documentos entregues em cada etapa da atividade
+```
+pse-em-acao/
+├── README.md
+├── codigo/
+│   └── pse_em_acao.c          código-fonte do sistema
+└── documentacao/
+    ├── (documento da Etapa 1)
+    ├── AEP_ESOFT2S_PSE_em_Acao_Etapa2_Miguel_Antonio_Rafael.docx
+    ├── diagrama_casos_de_uso.png
+    └── capturas/               capturas de tela do programa em execução
+```
 
-## Etapa atual
+## Limites éticos
 
-**Etapa 1 — Documento escrito.** Contempla a produção textual, os requisitos, os
-fluxogramas, os pseudocódigos e o planejamento das sprints. A implementação em
-linguagem C será entregue na Etapa 2.
+O sistema opera exclusivamente com dados fictícios e informações coletivas sobre as ações.
+Não armazena nome, diagnóstico, prontuário ou qualquer dado individual de estudante e não
+realiza diagnóstico, triagem, prescrição ou recomendação de tratamento. No campo
+"responsável" é informada a equipe ou a função, nunca o nome de uma pessoa.
 
-Documento da Etapa 1: [clique aqui](documentacao/AEP_ESOFT2S_PSE_em_Acao_Etapa1_Miguel_Antonio_Rafael.pdf)
+## Etapas
+
+- **Etapa 1 — Documento escrito:** produção textual, requisitos, fluxogramas,
+  pseudocódigos e planejamento das sprints.
+- **Etapa 2 — Implementação e apresentação:** código-fonte em C, casos de uso,
+  requisitos atualizados, registro de testes, manual do usuário e vídeo.
+
+**Vídeo de apresentação:** [COLAR AQUI O LINK DO VÍDEO]
