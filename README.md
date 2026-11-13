@@ -68,8 +68,8 @@ pse-em-acao/
 ├── codigo/
 │   └── pse_em_acao.c          código-fonte do sistema
 └── documentacao/
-    ├── AEP_ESOFT2S_PSE_em_Acao_Etapa1_Miguel_Antonio_Rafael.pdf   documento da Etapa 1
-    ├── AEP_ESOFT2S_PSE_em_Acao_Etapa2_Miguel_Antonio_Rafael.pdf   documento final da Etapa 2
+    ├── PSE_em_Acao_AEP_2026_Etapa1.pdf                            documento da Etapa 1
+    ├── PSE_em_Acao_AEP_2026_Etapa2.pdf                            documento final da Etapa 2
     ├── diagrama_casos_de_uso.png
     └── capturas/               capturas de tela do programa em execução
 ```
