@@ -70,7 +70,6 @@ pse-em-acao/
 └── documentacao/
     ├── AEP_ESOFT2S_PSE_em_Acao_Etapa1_Miguel_Antonio_Rafael.pdf   documento da Etapa 1
     ├── AEP_ESOFT2S_PSE_em_Acao_Etapa2_Miguel_Antonio_Rafael.pdf   documento final da Etapa 2
-    ├── AEP_ESOFT2S_PSE_em_Acao_Etapa2_Miguel_Antonio_Rafael.docx  mesmo documento, em Word
     ├── diagrama_casos_de_uso.png
     └── capturas/               capturas de tela do programa em execução
 ```
