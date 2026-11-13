@@ -49,8 +49,15 @@ opção *Compilar e Executar*.
 ```bash
 cd codigo
 gcc pse_em_acao.c -o pse
-./pse        # Linux
+./pse        # Linux e macOS
 pse.exe      # Windows
+```
+
+**No macOS:** se o terminal pedir para aceitar a licença do Xcode, aceite com
+`sudo xcodebuild -license accept` ou compile direto pelas ferramentas de linha de comando:
+
+```bash
+DEVELOPER_DIR=/Library/Developer/CommandLineTools gcc pse_em_acao.c -o pse
 ```
 
 ## Estrutura do repositório
@@ -61,8 +68,9 @@ pse-em-acao/
 ├── codigo/
 │   └── pse_em_acao.c          código-fonte do sistema
 └── documentacao/
-    ├── (documento da Etapa 1)
-    ├── AEP_ESOFT2S_PSE_em_Acao_Etapa2_Miguel_Antonio_Rafael.docx
+    ├── AEP_ESOFT2S_PSE_em_Acao_Etapa1_Miguel_Antonio_Rafael.pdf   documento da Etapa 1
+    ├── AEP_ESOFT2S_PSE_em_Acao_Etapa2_Miguel_Antonio_Rafael.pdf   documento final da Etapa 2
+    ├── AEP_ESOFT2S_PSE_em_Acao_Etapa2_Miguel_Antonio_Rafael.docx  mesmo documento, em Word
     ├── diagrama_casos_de_uso.png
     └── capturas/               capturas de tela do programa em execução
 ```
